@@ -1,0 +1,285 @@
+@media only screen and (max-width: 1399px){
+.header .navbar-light .nav-item .nav-link { font-size: 0.8rem;}
+.content_ab-relative .bnr__Adm_dv { padding-left: 1rem;}
+.content_ab-relative .button__flex strong { padding: 1.2rem 1.5rem;}
+.admission-section .sele__item:after { width: auto;}
+.bnrThub { left: 28%; bottom: 0; }
+.loction { width: 93%; }
+.bc-img01 { background-size: cover;}
+}
+
+@media only screen and (max-width: 1024px){
+#hero.container-fluid, #hero.container-fluid .row { padding-left: 0px; padding-right: 0px; margin-right: 0px; margin-left: 0px; }
+
+}
+
+@media only screen and (max-width: 980px){
+    .programs__item .blog-text {
+        margin-bottom: 20px !important;
+    }
+.desktop, .patten8 { display: none;}
+.mobile { display: block;}
+.dsu-intro { position: relative; width: 100%; margin: 1rem 0; margin-top: -2rem; z-index: 1; }
+.elig_dv p { text-align: center !important; }
+.dsu-form { margin-left: auto; margin-right: auto; margin-top: 0; margin-bottom: 0;}
+.dsu-addmission { margin-top: 0; padding-top: 0px; z-index: 2; }
+.bc-img01 {  background-attachment: initial; clip-path: none; background-image: none; height: auto; padding-bottom: 0;}
+
+.dsu-addmission { text-align: center; }
+.applyBox { margin-top: 0; width: 100%;}
+.hero-section {
+    clip-path: none;
+}
+.courses__fluid {
+    padding: 2.5rem 0;
+}
+.pe-5 {
+    padding-right: 0rem!important;
+}
+.bc-img01:after, .bc-img01::before { display: none;}
+.dsu-addmission p.fs-4 {
+    font-size: calc(1rem + .3vw) !important;
+}
+.leftsec_content, .thankyou-sec .hero-thankyou .bc-img01 { background-image: url(../images/banner.webp); background-size: 100%; background-position: center center; background-repeat: no-repeat;
+    background-size: cover; padding: 1rem 0.5rem; padding-bottom: 3.5rem;position: relative;
+}
+.logo img {
+    height: 3rem;
+}
+.leftsec_content:after, .thankyou-sec .hero-thankyou .bc-img01::after { position: absolute; background-color: rgba(0, 0, 0, 0.8);  opacity: 0.9; 
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.header .navbar-light .nav-item .nav-link {
+    padding: 1rem 0;
+    border-bottom: 1px solid #2a2a2a;
+    border-right: 0;
+}
+.marquee-area-1 {
+    overflow: hidden;
+    top: 0;
+    left: -0px;
+    padding: 1.5rem 0;
+    -webkit-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(0deg);
+}
+.rank-section .rank__item { margin: 0 0.5rem;}
+.Marquee-tag { margin: 0 0.8em; width: 110px; }
+.tab-pane.srvs_slider { width: 100%; margin: 0 auto;}
+}
+
+
+
+@media (min-width: 768px) {
+    .responsive-tabs .dropdown-arrow {
+        display: none; 
+    } 
+}
+
+@media screen and (max-width: 767px) {
+    .responsive-tabs {
+        position: relative; 
+        border: 1px solid #ccc;
+    }
+    .responsive-tabs li {
+        width: 100%; 
+        margin: 0 !important; 
+    }
+    .responsive-tabs li > a {
+        display: none; 
+        border: 0 !important; 
+        border-radius: 0 !important;
+    }
+    .responsive-tabs.open li > a, .responsive-tabs li > a.active {
+        display: block;
+    }
+    .responsive-tabs .dropdown-arrow { 
+        position: absolute;
+        top: 15px;
+        right: 15px; 
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+        vertical-align: middle;
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        transition: all ease .5s;
+        cursor: pointer; 
+    }
+    .responsive-tabs.open .dropdown-arrow {
+        transform: rotate(-135deg);
+        transition: all ease .5s; 
+    } 
+}  
+
+@media only screen and (max-width: 736px){
+.container, .applyBox { max-width: 100%;}
+.thankyou-sec .hero-thankyou .bc-img01 .thankyou__dv { width: 100%; }
+.mx-5 { margin-left: 0 !important; margin-right: 0 !important; }
+.bouncebtn {
+    animation: none;
+    -webkit-animation: none;
+    -moz-animation: bounce 2s infinite;
+    -o-animation: bounce 2s infinite;
+}
+
+.w-75 { width: 100% !important; }
+.header .header-absolute .mobile__dv a span { display: none;}
+.header .header-absolute .mobile__dv a { font-size:1rem; padding: 8px 10px !important; border-radius: 15px !important;}
+.student_ctnr, .elig_dv { text-align: center;}
+.widget-title h2 br { display: none;}
+.online__section .online__item { flex-wrap: wrap; text-align: center;}
+.online__section .online__item h5 { width: 100%; margin-left: 0;}
+.online__section .online__item .icon_svg { margin: 0 auto;}
+.loction { width: 100%;}
+.loction.fs-3 {
+    font-size: calc(1rem + .6vw) !important;
+}
+.dsu-addmission .content_bnr-flex h1, .dsu-addmission .content_bnr-flex .certiBx { width: 100%; margin: 0 auto;}
+.content_bnr-flex.mb-4 { margin-bottom: 0 !important;}
+}
+
+@media only screen and (max-width: 667px){
+.sideNavi {
+    position: fixed;
+    width: 100%;
+    bottom: 0px;
+    top: auto; right: auto;
+    left: 0;
+    z-index: 5;
+        -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+.sideNavi a { display: block; border-radius: 0; text-align: center; padding: 12px 2px; }
+.footer { height: 100px; font-size: 12px; }
+.sideNavi .sideNavi-flex { display: flex;}
+.sideNavi-item { width: 100%;}
+.sideNavi a { border: 0; }
+#rank-slider.owl-theme .owl-nav [class*=owl-] { display: none;}
+#aktu-slider, .elig_dv { margin-top: 2rem;}
+.affHead::after { right: 45%; top: 45px; transform: rotate(90deg);}
+.py-5 {
+    padding-top: 1.5rem !important;
+    padding-bottom: 1.5rem !important;
+}
+.elig_section:after { width: 38%; }
+.minD { display: none;}
+.elig_section { text-align:  center;}
+.elig_section .col-md-5 { margin-bottom: 0; font-size: 16px !important; padding: 0;}
+.elig_section .eli-ab span.text-dark {
+    position: relative;
+    top: 0;
+}
+.ms-2 { margin-left: 0rem !important;}
+.testimonial__item, .testi__content p { text-align: center;}
+.mbaText { text-align: center;
+    width: 100%;
+    display: block !important;}
+.dsu-addmission .content_bnr-flex .mbaText p { clip-path: none; display: inline-block; padding: 0.5rem 0.3rem; font-size: 1.1rem;}    
+.dsu-addmission .content_bnr-flex .mbaText p br {  display: none;}  
+.content_bnr-flex .mb-3 { margin-bottom: 0 !important;}  
+.ctc__dv { width: 75%; margin: 10px auto 0 !important;}
+.loction.mt-5 { margin-top: 0.5rem !important;}
+.rank-section .rank__item .digitally-one__counter-single { padding: 1.5rem 0.2rem;}
+.dsu-addmission .content_bnr-flex .mbaText h3 { font-size: 3rem; line-height: 1;}
+.ctc__content { text-align: left;}
+.content_bnr-flex.mb-5 { margin-bottom: 0.8rem !important;}
+.poten_item { font-size: 1rem;}
+
+.digitally-one__counter-single .odometer, .digitally-one__counter-single .plus { font-size: 2.5rem; }
+.digitally-one__counter-single .plus { top: 9px; }
+}
+
+@media only screen and (max-width: 568px){
+.dsu-form { width: 100%; opacity: 1; border: 1px solid var(--text-dark); }
+.dsu-addmission .content_bnr-flex h1 br { display: none; }
+.amenities__section .amenities__item { margin-top: 0rem; padding: 0 0rem;}
+.online__section .online__item {
+    padding: 1rem;
+    height: 180px;
+    background-color: rgba(255, 215, 0, 0.8);
+    margin: 0.2rem;
+}
+.online__section .online__item h5 { font-size: 1.1rem;}
+.pt-5, .py-5 {
+    padding-top: 1.5rem !important; padding-bottom: 1.5rem !important;
+}
+.jain_section .rank__item { margin-bottom: 0.1rem;}
+.programs__one .programs__item { min-height: 310px; }
+.digitally-one__counter-single p { font-size: 0.9rem; }
+.blog-text > a { width: 80%; font-size:1rem;}
+.tabs_list li .nav-link { width: 100%;}
+.partner-section .partner__logo { width: 47%; margin: 0.2rem 0.1rem; }
+.student_ctnr { margin-top: 1rem;}
+.programs__one .programs__item .eli__dv p {
+    font-size: 1rem;
+}
+.dsu-addmission p.fs-3 { font-size: calc(1rem + .6vw) !important;}
+.content_bnr-flex span { padding: 0.5rem 1rem; font-size: 1rem !important; }
+.persure-section .persure__item h5 { font-size: 1rem;}
+.w-25 { width: 100% !important;}
+.amenities__section.process-section .amenities__relative .pro_border {
+    top: 18%;
+    left: 30px;
+    width: 80%;
+}
+}
+
+@media only screen and (max-width: 480px){
+h1, h2, h3, h3, h4, h5, h6 { font-size: 24px; }
+p, ul.listing li, .elig_dv ul li { font-size: 14px; line-height: 20px;  }
+.offeredbxawd-content p { font-size: 13px;}
+.fsize28 {
+    font-size: 22px;
+}
+.thankyou-sec .hero-thankyou .bc-img01 .thankyou__dv h3 {
+    font-size: 3em;
+}
+.thankyou-sec .hero-thankyou .bc-img01 .thankyou__dv p { font-size: 16px; }
+.thankyou-sec .hero-thankyou .bc-img01 { height: 415px; }
+.fs-5 {
+    font-size: 1rem!important;
+}
+.header .navbar-expand-lg .navbar-brand { width: 200px; }
+.programme__section .programme-item { height: auto; }
+.dsu-addmission .content_bnr-flex h1, .dsu-addmission .content_bnr-flex .certiBx { font-size: 1.2rem; }
+.students__section .students__item { margin: 0;}
+.students__section .students__item { padding: 1rem;}
+.aheadTestimonial { margin-top: 1.5rem !important;}
+.amenities__section .amenities__item .amenities__icon { width: 100px; height: 100px;}
+.recruiters-section .recruiters-item .recruiters-logo { padding: 0.2rem;}
+}
+
+@media only screen and (max-width: 414px){
+.fs-2 {
+font-size: calc(1.2rem + .9vw) !important;
+}
+.elig_section .line {
+    display: none;
+}
+
+}
+
+@media only screen and (max-width: 384px){
+
+
+}
+
+
+@media only screen and (max-width: 360px){
+
+}
+
+@media only screen and (max-width: 320px){
+
+}
