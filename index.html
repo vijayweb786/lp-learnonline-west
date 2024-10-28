@@ -1423,16 +1423,71 @@ application form</p>
  </script>
  
  <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6694ca1fbecc2fed6924e570/1i2qjb34s';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+ <script>
+  var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+  (function() {
+      var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/6694ca1fbecc2fed6924e570/1i2qjb34s';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+
+      // Ensure the functions are defined after the script loads
+      s1.onload = function() {
+          // Handle offline form submission
+          Tawk_API.onOfflineSubmit = function(data) {
+              handleFormSubmission(data);
+          };
+
+          // Handle pre-chat form submission
+          Tawk_API.onPrechatSubmit = function(data) {
+              handleFormSubmission(data);
+          };
+
+          // Common function to handle form submission
+          function handleFormSubmission(data) {
+              console.log("Form data:", data);
+             var urlParams = new URLSearchParams(window.location.search);
+          var campaign_name = urlParams.get("utm_campaign");
+          var utm_medium = urlParams.get("utm_medium");
+
+              // Extracting values from the data array
+              var name = data[0]['answer'];
+              var phone = data[1]['answer'];
+              var email = data[2]['answer'];
+              var university = data[3]['answer'];
+
+              //alert(name);
+              //alert(email);
+              //alert(phone);
+
+              if (name !== '' && email !== '' && phone !== '') {
+                  console.log("Sending AJAX request...");
+                  $.ajax({
+                      url: "code.php", // the page containing PHP script
+                      type: "post", // request type
+                      dataType: 'json',
+                      data: {
+                          name: name,
+                          email: email,
+                          phone: phone,
+                          university: university
+                      },
+                      success: function(result) {
+                          console.log("AJAX success:", result);
+                      },
+                      error: function(xhr, status, error) {
+                          console.error("AJAX error:", status, error);
+                      }
+                  });
+              } else {
+                  console.error("Form fields are missing.");
+              }
+          }
+      };
+  })();
 </script>
 <!--End of Tawk.to Script-->
  
