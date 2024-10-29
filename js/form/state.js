@@ -1,15 +1,12 @@
-function select_state_func()
-{
+function select_state_func() {
     var select = document.getElementById("stateid");
-        var typevalue = select.options[select.selectedIndex].value;
-    
-    if (typevalue == 1)
-    {
-      document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Port Blair' >Port Blair</option></select>";
+    var typevalue = select.options[select.selectedIndex].value;
+
+    if (typevalue == "Andaman and Nicobar Islands") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Port Blair' >Port Blair</option></select>";
     }
-    else if (typevalue == 2)
-    {
-        document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Adoni'>Adoni</option>\
+    else if (typevalue == "Andhra Pradesh") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Adoni'>Adoni</option>\
         <option value='Amaravati'>Amaravati</option>\
         <option value='Anantapur'>Anantapur</option>\
         <option value='Bhimavaram'>Bhimavaram</option>\
@@ -39,15 +36,13 @@ function select_state_func()
         <option value='Tirupati'>Tirupati</option>\
         <option value='Visakhapatnam'>Visakhapatnam</option>\
         <option value='Vijayawada'>Vijayawada</option></select>";
-      
-      }
-    else if (typevalue == 3)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Itanagar' >Itanagar</option></select>";
+
     }
-    else if (typevalue == 4)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Barpeta' >Barpeta</option>\
+    else if (typevalue == "Arunachal Pradesh") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Itanagar' >Itanagar</option></select>";
+    }
+    else if (typevalue == "Assam") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Barpeta' >Barpeta</option>\
 <option value='Bongaigaon' >Bongaigaon</option>\
 <option value='Dhuburi' >Dhuburi</option>\
 <option value='Dibrugarh' >Dibrugarh</option>\
@@ -63,9 +58,8 @@ function select_state_func()
 <option value='Tezpur' >Tezpur</option>\
 <option value='Tinsukia' >Tinsukia</option></select>";
     }
-else if (typevalue == 5)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Araria' >Araria</option>\
+    else if (typevalue == "Bihar") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Araria' >Araria</option>\
 <option value='Arrah' >Arrah</option>\
 <option value='Aurangabad' >Aurangabad</option>\
 <option value='Bagaha' >Bagaha</option>\
@@ -112,13 +106,11 @@ else if (typevalue == 5)
 <option value='Siwan' >Siwan</option>\
 <option value='Supaul' >Supaul</option></select>";
     }
-    else if (typevalue == 6)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Chandigarh' >Chandigarh</option></select>";
+    else if (typevalue == "Chandigarh") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Chandigarh' >Chandigarh</option></select>";
     }
-      else if (typevalue == 7)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Ambikapur' >Ambikapur</option>\
+    else if (typevalue == "Chhattisgarh") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Ambikapur' >Ambikapur</option>\
 <option value='Bhilai' >Bhilai</option>\
 <option value='Bilaspur' >Bilaspur</option>\
 <option value='Charoda' >Charoda</option>\
@@ -131,24 +123,21 @@ else if (typevalue == 5)
 <option value='Raipur' >Raipur</option>\
 <option value='Rajnandgaon' >Rajnandgaon</option></select>";
     }
-else if (typevalue == 8)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Delhi' >Delhi</option>\
+    else if (typevalue == "Delhi and NCR") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Delhi' >Delhi</option>\
 <option value='Faridabad' >Faridabad</option>\
 <option value='Ghazibad' >Ghazibad</option>\
 <option value='Gurgaon' >Gurgaon</option>\
 <option value='New Delhi' >New Delhi</option>\
 <option value='Noida' >Noida</option></select>";
     }
-    else if (typevalue == 9)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Madgaon' >Madgaon</option>\
+    else if (typevalue == "Goa") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Madgaon' >Madgaon</option>\
 <option value='Mormugao' >Mormugao</option>\
 <option value='Panaji' >Panaji</option></select>";
     }
-    else if (typevalue == 10)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Ahmedabad' >Ahmedabad</option>\
+    else if (typevalue == "Gujarat") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Ahmedabad' >Ahmedabad</option>\
 <option value='Amreli' >Amreli</option>\
 <option value='Anand' >Anand</option>\
 <option value='Anjar' >Anjar</option>\
@@ -212,9 +201,8 @@ else if (typevalue == 8)
 <option value='Visnagar' >Visnagar</option>\
 <option value='Wadhwan' >Wadhwan</option></select>";
     }
-    else if (typevalue == 11)
-    {
-      document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Ambala' >Ambala</option>\
+    else if (typevalue == "Haryana") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Ambala' >Ambala</option>\
       <option value='Ambala Cantonment' >Ambala Cantonment</option>\
       <option value='Ambala Sadar' >Ambala Sadar</option>\
       <option value='Bahadurgarh' >Bahadurgarh</option>\
@@ -241,13 +229,11 @@ else if (typevalue == 8)
       <option value='Tohana' >Tohana</option>\
       <option value='Yamunanagar' >Yamunanagar</option></select>";
     }
-    else if (typevalue == 12)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Shimla' >Shimla</option></select>";
+    else if (typevalue == "Himachal Pradesh") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Shimla' >Shimla</option></select>";
     }
-    else if (typevalue == 13)
-    {
-      document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Anantnag' >Anantnag</option>\
+    else if (typevalue == "Jammu and Kashmir") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Anantnag' >Anantnag</option>\
       <option value='Baramula' >Baramula</option>\
       <option value='Bari Brahmana' >Bari Brahmana</option>\
       <option value='Jammu' >Jammu</option>\
@@ -256,9 +242,8 @@ else if (typevalue == 8)
       <option value='Srinagar' >Srinagar</option>\
       <option value='Udhampur' >Udhampur</option></select>";
     }
-    else if (typevalue == 14)
-    {
-        document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Adityapur' >Adityapur</option>\
+    else if (typevalue == "Jharkhand") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Adityapur' >Adityapur</option>\
         <option value='Bagbahra' >Bagbahra</option>\
         <option value='Bhuli' >Bhuli</option>\
         <option value='Bokaro' >Bokaro</option>\
@@ -282,9 +267,8 @@ else if (typevalue == 8)
         <option value='Saunda' >Saunda</option>\
         <option value='Sindari' >Sindari</option></select>";
     }
-    else if (typevalue == 15)
-    {
-        document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Bagalkot' >Bagalkot</option>\
+    else if (typevalue == "Karnataka") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Bagalkot' >Bagalkot</option>\
       <option value='Bangalore' >Bangalore</option>\
       <option value='Basavakalyan' >Basavakalyan</option>\
       <option value='Belgaum' >Belgaum</option>\
@@ -350,9 +334,8 @@ else if (typevalue == 8)
       <option value='Yadgir' >Yadgir</option>\
       <option value='Yelahanka' >Yelahanka</option></select>";
     }
-    else if (typevalue == 16)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Alappuzha' >Alappuzha</option>\
+    else if (typevalue == "Kerala") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Alappuzha' >Alappuzha</option>\
 <option value='Beypur' >Beypur</option>\
 <option value='Cheruvannur' >Cheruvannur</option>\
 <option value='Edakkara' >Edakkara</option>\
@@ -385,9 +368,8 @@ else if (typevalue == 8)
 <option value='Tiruvalla' >Tiruvalla</option>\
 <option value='Vadakara' >Vadakara</option></select>";
     }
-    else if (typevalue == 17)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Ashoknagar' >Ashoknagar</option>\
+    else if (typevalue == "Madhya Pradesh") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Ashoknagar' >Ashoknagar</option>\
 <option value='Balaghat' >Balaghat</option>\
 <option value='Basoda' >Basoda</option>\
 <option value='Betul' >Betul</option>\
@@ -441,9 +423,8 @@ else if (typevalue == 8)
 <option value='Ujjain' >Ujjain</option>\
 <option value='Vidisha' >Vidisha</option></select>";
     }
-    else if (typevalue == 18)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Achalpur' >Achalpur</option>\
+    else if (typevalue == "Maharashtra") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Achalpur' >Achalpur</option>\
 <option value='Ahmadnagar' >Ahmadnagar</option>\
 <option value='Akola' >Akola</option>\
 <option value='Akot' >Akot</option>\
@@ -534,29 +515,24 @@ else if (typevalue == 8)
 <option value='Washim' >Washim</option>\
 <option value='Yavatmal' >Yavatmal</option></select>";
     }
-    else if (typevalue == 19)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Imphal' >Imphal</option></select>";
+    else if (typevalue == "Manipur") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Imphal' >Imphal</option></select>";
     }
-      else if (typevalue == 20)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Shillong' >Shillong</option>\
+    else if (typevalue == "Meghalaya") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Shillong' >Shillong</option>\
 <option value='Tura' >Tura</option></select>";
     }
-    else if (typevalue == 21)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Aizawl' >Aizawl</option>\
+    else if (typevalue == "Mizoram") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Aizawl' >Aizawl</option>\
 <option value='Lunglei' >Lunglei</option></select>";
     }
-    else if (typevalue == 22)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Dimapur' >Dimapur</option>\
+    else if (typevalue == "Nagaland") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Dimapur' >Dimapur</option>\
 <option value='Kohima' >Kohima</option>\
 <option value='Wokha' >Wokha</option></select>";
     }
-    else if (typevalue == 23)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Balangir' >Balangir</option>\
+    else if (typevalue == "Odisha") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Balangir' >Balangir</option>\
 <option value='Baleshwar' >Baleshwar</option>\
 <option value='Barbil' >Barbil</option>\
 <option value='Bargarh' >Bargarh</option>\
@@ -579,15 +555,13 @@ else if (typevalue == 8)
 <option value='Sambalpur' >Sambalpur</option>\
 <option value='Sunabeda' >Sunabeda</option></select>";
     }
-    else if (typevalue == 24)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Karaikal' >Karaikal</option>\
-<option value='Ozhukarai' >Ozhukarai</option>\
-<option value='Pondicherry' >Pondicherry</option></select>";
-    }
-    else if (typevalue == 25)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Abohar' >Abohar</option>\
+//     else if (typevalue == "Tamil Nadu") {
+//         document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Karaikal' >Karaikal</option>\
+// <option value='Ozhukarai' >Ozhukarai</option>\
+// <option value='Pondicherry' >Pondicherry</option></select>";
+//     }
+    else if (typevalue == "Punjab") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Abohar' >Abohar</option>\
 <option value='Amritsar' >Amritsar</option>\
 <option value='Barnala' >Barnala</option>\
 <option value='Batala' >Batala</option>\
@@ -621,9 +595,8 @@ else if (typevalue == 8)
 <option value='Sirhind' >Sirhind</option>\
 <option value='Sunam' >Sunam</option>\
 <option value='Tarn Taran' >Tarn Taran</option></select>";
-    }else if (typevalue == 26)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Ajmer' >Ajmer</option>\
+    } else if (typevalue == "Rajasthan") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Ajmer' >Ajmer</option>\
 <option value='Alwar' >Alwar</option>\
 <option value='Balotra' >Balotra</option>\
 <option value='Banswara' >Banswara</option>\
@@ -674,9 +647,8 @@ else if (typevalue == 8)
 <option value='Tonk' >Tonk</option>\
 <option value='Udaipur' >Udaipur</option></select>";
     }
-else if (typevalue == 27)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Alandur' >Alandur</option>\
+    else if (typevalue == "Tamil Nadu") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Alandur' >Alandur</option>\
 <option value='Ambattur' >Ambattur</option>\
 <option value='Ambur' >Ambur</option>\
 <option value='Arakonam' >Arakonam</option>\
@@ -762,15 +734,13 @@ else if (typevalue == 27)
 <option value='Virudhachalam' >Virudhachalam</option>\
 <option value='Virudunagar' >Virudunagar</option></select>";
     }
-    else if (typevalue == 28)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Agartala' >Agartala</option>\
+    else if (typevalue == "Tripura") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Agartala' >Agartala</option>\
 <option value='Agartala MCl' >Agartala MCl</option>\
 <option value='Badharghat' >Badharghat</option></select>";
     }
-  else if (typevalue == 29)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Agra' >Agra</option>\
+    else if (typevalue == "Uttar Pradesh") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Agra' >Agra</option>\
 <option value='Aligarh' >Aligarh</option>\
 <option value='Allahabad' >Allahabad</option>\
 <option value='Amroha' >Amroha</option>\
@@ -890,9 +860,8 @@ else if (typevalue == 27)
 <option value='Varanasi' >Varanasi</option>\
 <option value='Vrindavan' >Vrindavan</option></select>";
     }
-    else if (typevalue == 30)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Dehradun' >Dehradun</option>\
+    else if (typevalue == "Uttaranchal") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Dehradun' >Dehradun</option>\
 <option value='Dehra Dun Cantonment' >Dehra Dun Cantonment</option>\
 <option value='Gola Range' >Gola Range</option>\
 <option value='Haldwani' >Haldwani</option>\
@@ -903,9 +872,8 @@ else if (typevalue == 27)
 <option value='Rudrapur' >Rudrapur</option>\
 <option value='Rurki' >Rurki</option></select>";
     }
-    else if (typevalue == 31)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Alipur Duar' >Alipur Duar</option>\
+    else if (typevalue == "West Bengal") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Alipur Duar' >Alipur Duar</option>\
 <option value='Arambagh' >Arambagh</option>\
 <option value='Asansol' >Asansol</option>\
 <option value='Ashoknagar Kalyangarh' >Ashoknagar Kalyangarh</option>\
@@ -999,22 +967,18 @@ else if (typevalue == 27)
 <option value='Ulubaria' >Ulubaria</option>\
 <option value='UttarparaKotrung' >UttarparaKotrung</option></select>";
     }
-    else if (typevalue == 32)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Dadar-Nagar Haveli' >Dadar-Nagar Haveli</option></select>";
+    else if (typevalue == "Dadra and Nagar Haveli") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Dadar-Nagar Haveli' >Dadar-Nagar Haveli</option></select>";
     }
-    else if (typevalue == 33)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Daman' >Daman</option>\
+    else if (typevalue == "Daman and Diu") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Daman' >Daman</option>\
 <option value='Diu' >Diu</option></select>";
     }
-    else if (typevalue == 34)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Sikkim East'>Sikkim East</option><option value='Gangtok'>Gangtok</option><option value='Ghezing'>Ghezing</option><option value='Jorethang'>Jorethang</option><option value='Legship'>Legship</option><option value='Mangan'>Mangan</option><option value='Namchi'>Namchi</option></select>";
+    else if (typevalue == "Sikkim") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option><option value='Sikkim East'>Sikkim East</option><option value='Gangtok'>Gangtok</option><option value='Ghezing'>Ghezing</option><option value='Jorethang'>Jorethang</option><option value='Legship'>Legship</option><option value='Mangan'>Mangan</option><option value='Namchi'>Namchi</option></select>";
     }
-    else if (typevalue == 36)
-    {
-    document.getElementById("citypid").innerHTML="<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option>\
+    else if (typevalue == "Andhra Pradesh") {
+        document.getElementById("citypid").innerHTML = "<select name='city' id='cityid' class='form-select validate[required]'><option value='' selected='selected'>Select City*</option>\
       <option value='Adilabad' >Adilabad</option>\
       <option value='Bhadradri' >Bhadradri</option>\
       <option value='Hyderabad' >Hyderabad</option>\
@@ -1048,4 +1012,4 @@ else if (typevalue == 27)
       <option value='Yadadri' >Yadadri</option></select>";
 
     }
-  }
+}
