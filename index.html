@@ -135,10 +135,9 @@
 
                             <div class="contact-fild-box">
                               <div class="form-group">
-                                <input class="form-control" id="phone" type="tel" maxlength="10" placeholder="Mobile*"
-                                  name="phone" pattern="[6-9]{1}[0-9]{9}"
-                                  title="Phone number with 6-9 and remaing 9 digit with 0-9" required>
+                                <input class="form-control" id="phone" type="text" maxlength="10" placeholder="Mobile*" name="phone" pattern="^[6-9][0-9]{9}$" title="Phone number must start with 6-9 and followed by 9 digits, numbers only" required data-gtm-form-interact-field-id="0" oninput="this.value=this.value.replace(/[^0-9]/g,'');">
                               </div>
+
                             </div>
 
                             <div class="contact-fild-box">
